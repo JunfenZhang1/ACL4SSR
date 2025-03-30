@@ -1,48 +1,103 @@
+# proxy-groups
 proxy-groups:
-  - name: 节点选择
+  - name: 🚀 节点选择
     type: select
-    proxies: [手动切换, 自动选择, 故障转移, 负债均衡, DIRECT]
-  - name: 手动切换
+    proxies: [☑️ 手动切换, ♻️ 自动选择, 🔯 故障转移, 🔮 负债均衡, 🍃 ip净化, DIRECT]
+  - name: ☑️ 手动切换
     type: select
     include-all: true
-  - name: 自动选择
+  - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     include-all: true
-  - name: 故障转移
+  - name: 🔯 故障转移
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 180
     include-all: true
-  - name: 负债均衡
+  - name: 🔮 负债均衡
     type: load-balance
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 150
-    include-all: true
-    exclude-type: direct
     strategy: consistent-hashing
-  - name: 漏网之鱼
+    include-all: true
+  - name: 🍃 ip净化
     type: select
-    proxies: [节点选择, 手动切换, 自动选择, 故障转移, 负债均衡, DIRECT]
-  - name: 全球直连
+    include-all: true
+  - name: 🐟 漏网之鱼
     type: select
-    proxies: [DIRECT, 节点选择, 手动切换, 自动选择, 故障转移, 负债均衡]
-  - name: 广告拦截
+    proxies: [🚀 节点选择, ☑️ 手动切换, ♻️ 自动选择, 🔯 故障转移, 🔮 负债均衡, 🍃 ip净化, DIRECT]
+  - name: 📲 电报消息
+    type: select
+    proxies: [🚀 节点选择, ☑️ 手动切换, ♻️ 自动选择, 🔯 故障转移, 🔮 负债均衡, 🍃 ip净化, DIRECT]
+  - name: 🤖 OpenAi
+    type: select
+    proxies: [🚀 节点选择, ☑️ 手动切换, ♻️ 自动选择, 🔯 故障转移, 🔮 负债均衡, 🍃 ip净化, DIRECT]
+  - name: 📹 油管视频
+    type: select
+    proxies: [🚀 节点选择, ☑️ 手动切换, ♻️ 自动选择, 🔯 故障转移, 🔮 负债均衡, 🍃 ip净化, DIRECT]
+  - name: 🎥 奈飞视频
+    type: select
+    proxies: [🚀 节点选择, ☑️ 手动切换, ♻️ 自动选择, 🔯 故障转移, 🔮 负债均衡, 🍃 ip净化, DIRECT]
+  - name: 📺 巴哈姆特
+    type: select
+    proxies: [🚀 节点选择, ☑️ 手动切换, ♻️ 自动选择, 🔯 故障转移, 🔮 负债均衡, 🍃 ip净化, DIRECT]
+  - name: 🌍 国外媒体
+    type: select
+    proxies: [🚀 节点选择, ☑️ 手动切换, ♻️ 自动选择, 🔯 故障转移, 🔮 负债均衡, 🍃 ip净化, DIRECT]
+  - name: Ⓜ️ 微软Bing
+    type: select
+    proxies: [🚀 节点选择, ☑️ 手动切换, ♻️ 自动选择, 🔯 故障转移, 🔮 负债均衡, 🍃 ip净化, DIRECT]
+  - name: Ⓜ️ 微软云盘
+    type: select
+    proxies: [🚀 节点选择, ☑️ 手动切换, ♻️ 自动选择, 🔯 故障转移, 🔮 负债均衡, 🍃 ip净化, DIRECT]
+  - name: Ⓜ️ 微软服务
+    type: select
+    proxies: [🚀 节点选择, ☑️ 手动切换, ♻️ 自动选择, 🔯 故障转移, 🔮 负债均衡, 🍃 ip净化, DIRECT]
+  - name: 📢 谷歌FCM
+    type: select
+    proxies: [🚀 节点选择, ☑️ 手动切换, ♻️ 自动选择, 🔯 故障转移, 🔮 负债均衡, 🍃 ip净化, DIRECT]
+  - name: 🎮 游戏平台
+    type: select
+    proxies: [🚀 节点选择, ☑️ 手动切换, ♻️ 自动选择, 🔯 故障转移, 🔮 负债均衡, 🍃 ip净化, DIRECT]
+  - name: 🎯 全球直连
+    type: select
+    proxies: [DIRECT, 🚀 节点选择, ☑️ 手动切换, ♻️ 自动选择, 🔯 故障转移, 🔮 负债均衡, 🍃 ip净化]
+  - name: 🛑 广告拦截
     type: select
     proxies: [REJECT, DIRECT]
-  - name: 应用净化
+  - name: 🍃 应用净化
     type: select
     proxies: [REJECT, DIRECT]
+  - name: 🍎 苹果服务
+    type: select
+    proxies: [DIRECT, 🚀 节点选择, ☑️ 手动切换, ♻️ 自动选择, 🔯 故障转移, 🔮 负债均衡, 🍃 ip净化]
+  - name: 🌏 国内媒体
+    type: select
+    proxies: [DIRECT, 🚀 节点选择, ☑️ 手动切换, ♻️ 自动选择, 🔯 故障转移, 🔮 负债均衡, 🍃 ip净化]
+  - name: 📺 哔哩哔哩
+    type: select
+    proxies: [DIRECT, 🚀 节点选择, ☑️ 手动切换, ♻️ 自动选择, 🔯 故障转移, 🔮 负债均衡, 🍃 ip净化]
+  - name: 🎶 网易音乐
+    type: select
+    proxies: [DIRECT, 🚀 节点选择, ☑️ 手动切换, ♻️ 自动选择, 🔯 故障转移, 🔮 负债均衡, 🍃 ip净化]
 
+# rule-providers
 rule-providers:
   me_direct:
     type: http
     behavior: classical
     url: https://raw.githubusercontent.com/JunfenZhang1/ACL4SSR/refs/heads/me/Clash/me_direct.list
     path: ./ruleset/me_direct.list
+    interval: 86400
+  me_clean:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/JunfenZhang1/ACL4SSR/refs/heads/me/Clash/me_clean.list
+    path: ./ruleset/me_clean.list
     interval: 86400
   CFnat:
     type: http
@@ -284,48 +339,49 @@ rule-providers:
     url: https://raw.githubusercontent.com/cmliu/ACL4SSR/main/Clash/adobe.list
     path: ./ruleset/adobe.list
     interval: 86400
-
+# rules
 rules:
-  - RULE-SET,me_direct,全球直连
-  - RULE-SET,CFnat,全球直连
-  - RULE-SET,LocalAreaNetwork,全球直连
-  - RULE-SET,UnBan,全球直连
-  - RULE-SET,BanAD,广告拦截
-  - RULE-SET,BanProgramAD,应用净化
-  - RULE-SET,GoogleFCM,节点选择
-  - RULE-SET,GoogleCN,全球直连
-  - RULE-SET,SteamCN,全球直连
-  - RULE-SET,Bing,节点选择
-  - RULE-SET,OneDrive,节点选择
-  - RULE-SET,Microsoft,节点选择
-  - RULE-SET,Apple,全球直连
-  - RULE-SET,Telegram,节点选择
-  - RULE-SET,OpenAi,节点选择
-  - RULE-SET,ai,节点选择
-  - RULE-SET,Copilot,节点选择
-  - RULE-SET,GithubCopilot,节点选择
-  - RULE-SET,Claude,节点选择
-  - RULE-SET,NetEaseMusic,全球直连
-  - RULE-SET,Epic,节点选择
-  - RULE-SET,Origin,节点选择
-  - RULE-SET,Sony,节点选择
-  - RULE-SET,Steam,节点选择
-  - RULE-SET,Nintendo,节点选择
-  - RULE-SET,YouTube,节点选择
-  - RULE-SET,Netflix,节点选择
-  - RULE-SET,Bahamut,节点选择
-  - RULE-SET,BilibiliHMT,全球直连
-  - RULE-SET,Bilibili,全球直连
-  - RULE-SET,ChinaMedia,全球直连
-  - RULE-SET,ProxyMedia,节点选择
-  - RULE-SET,Emby,节点选择
-  - RULE-SET,ProxyGFWlist,节点选择
-  - RULE-SET,proxy,节点选择
-  - RULE-SET,CMBlog,节点选择
-  - RULE-SET,direct,全球直连
-  - RULE-SET,ChinaDomain,全球直连
-  - RULE-SET,ChinaCompanyIp,全球直连
-  - RULE-SET,Download,全球直连
-  - GEOIP,CN,全球直连
-  - RULE-SET,adobe,应用净化
-  - MATCH,漏网之鱼
+  - RULE-SET,me_direct,🎯 全球直连
+  - RULE-SET,me_clean,🍃 ip净化
+  - RULE-SET,CFnat,🎯 全球直连
+  - RULE-SET,LocalAreaNetwork,🎯 全球直连
+  - RULE-SET,UnBan,🎯 全球直连
+  - RULE-SET,BanAD,🛑 广告拦截
+  - RULE-SET,BanProgramAD,🍃 应用净化
+  - RULE-SET,GoogleFCM,📢 谷歌FCM
+  - RULE-SET,GoogleCN,🎯 全球直连
+  - RULE-SET,SteamCN,🎯 全球直连
+  - RULE-SET,Bing,Ⓜ️ 微软Bing
+  - RULE-SET,OneDrive,Ⓜ️ 微软云盘
+  - RULE-SET,Microsoft,Ⓜ️ 微软服务
+  - RULE-SET,Apple,🍎 苹果服务
+  - RULE-SET,Telegram,📲 电报消息
+  - RULE-SET,OpenAi,🤖 OpenAi
+  - RULE-SET,ai,🤖 OpenAi
+  - RULE-SET,Copilot,🤖 OpenAi
+  - RULE-SET,GithubCopilot,🤖 OpenAi
+  - RULE-SET,Claude,🤖 OpenAi
+  - RULE-SET,NetEaseMusic,🎶 网易音乐
+  - RULE-SET,Epic,🎮 游戏平台
+  - RULE-SET,Origin,🎮 游戏平台
+  - RULE-SET,Sony,🎮 游戏平台
+  - RULE-SET,Steam,🎮 游戏平台
+  - RULE-SET,Nintendo,🎮 游戏平台
+  - RULE-SET,YouTube,📹 油管视频
+  - RULE-SET,Netflix,🎥 奈飞视频
+  - RULE-SET,Bahamut,📺 巴哈姆特
+  - RULE-SET,BilibiliHMT,📺 哔哩哔哩
+  - RULE-SET,Bilibili,📺 哔哩哔哩
+  - RULE-SET,ChinaMedia,🌏 国内媒体
+  - RULE-SET,ProxyMedia,🌍 国外媒体
+  - RULE-SET,Emby,🌍 国外媒体
+  - RULE-SET,ProxyGFWlist,🚀 节点选择
+  - RULE-SET,proxy,🚀 节点选择
+  - RULE-SET,CMBlog,🚀 节点选择
+  - RULE-SET,direct,🎯 全球直连
+  - RULE-SET,ChinaDomain,🎯 全球直连
+  - RULE-SET,ChinaCompanyIp,🎯 全球直连
+  - RULE-SET,Download,🎯 全球直连
+  - GEOIP,CN,🎯 全球直连
+  - RULE-SET,adobe,🍃 应用净化
+  - MATCH,🐟 漏网之鱼

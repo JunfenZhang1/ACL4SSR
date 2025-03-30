@@ -2,27 +2,7 @@ proxy-groups:
   - name: 节点选择
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Proxy.png
     type: select
-    proxies:
-      - 自动选择
-      - 自动选择2
-      - 自动选择3
-      - 故障转移
-      - 故障转移2
-      - 故障转移3
-      - 美国节点
-      - 狮城节点
-      - 日本节点
-      - 韩国节点
-      - 香港节点
-      - 官方优选
-      - 美国节点2
-      - 狮城节点2
-      - 日本节点2
-      - 韩国节点2
-      - 香港节点2
-      - 官方优选2
-      - 手动切换
-      - DIRECT
+    proxies: [自动选择, 自动选择2, 自动选择3, 故障转移, 故障转移2, 故障转移3, 美国节点, 狮城节点, 日本节点, 韩国节点, 香港节点, 官方优选, 美国节点2, 狮城节点2, 日本节点2, 韩国节点2, 香港节点2, 官方优选2, 手动切换, DIRECT]
   - name: 手动切换
     icon: https://testingcf.jsdelivr.net/gh/shindgewongxj/WHATSINStash@master/icon/select.png
     type: select
@@ -33,26 +13,14 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
-    proxies:
-      - 美国节点
-      - 狮城节点
-      - 日本节点
-      - 韩国节点
-      - 香港节点
-      - 官方优选
+    proxies: [美国节点, 狮城节点, 日本节点, 韩国节点, 香港节点, 官方优选]
   - name: 自动选择2
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Auto.png
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
-    proxies:
-      - 美国节点2
-      - 狮城节点2
-      - 日本节点2
-      - 韩国节点2
-      - 香港节点2
-      - 官方优选2
+    proxies: [美国节点2, 狮城节点2, 日本节点2, 韩国节点2, 香港节点2, 官方优选2]
   - name: 自动选择3
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Auto.png
     type: url-test
@@ -65,465 +33,99 @@ proxy-groups:
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 180
-    proxies:
-      - 美国节点
-      - 狮城节点
-      - 官方优选
-      - 日本节点
-      - 韩国节点
-      - 香港节点
+    proxies: [美国节点, 狮城节点, 官方优选, 日本节点, 韩国节点, 香港节点]
   - name: 故障转移2
     icon: https://www.clashverge.dev/assets/icons/ambulance.svg
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 180
-    proxies:
-      - 美国节点2
-      - 狮城节点2
-      - 官方优选2
-      - 日本节点2
-      - 韩国节点2
-      - 香港节点2
+    proxies: [美国节点2, 狮城节点2, 官方优选2, 日本节点2, 韩国节点2, 香港节点2]
   - name: 故障转移3
     icon: https://www.clashverge.dev/assets/icons/ambulance.svg
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 180
-    proxies:
-      - 狮城节点2
-      - 官方优选2
-      - 韩国节点2
-      - 美国节点2
-      - 日本节点2
-      - 香港节点2
-  - name:  电报消息
+    proxies: [狮城节点2, 官方优选2, 韩国节点2, 美国节点2, 日本节点2, 香港节点2]
+  - name: 电报消息
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Telegram.png
     type: select
-    proxies:
-      - 节点选择
-      - 自动选择
-      - 自动选择2
-      - 自动选择3
-      - 故障转移
-      - 故障转移2
-      - 美国节点
-      - 狮城节点
-      - 日本节点
-      - 韩国节点
-      - 香港节点
-      - 官方优选
-      - 美国节点2
-      - 狮城节点2
-      - 日本节点2
-      - 韩国节点2
-      - 香港节点2
-      - 官方优选2
-      - 手动切换
-      - DIRECT
-  - name:  OpenAi
+    proxies: [节点选择, 自动选择, 自动选择2, 自动选择3, 故障转移, 故障转移2, 美国节点, 狮城节点, 日本节点, 韩国节点, 香港节点, 官方优选, 美国节点2, 狮城节点2, 日本节点2, 韩国节点2, 香港节点2, 官方优选2, 手动切换, DIRECT]
+  - name: OpenAi
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Bot.png
     type: select
-    proxies:
-      - 节点选择
-      - 自动选择
-      - 自动选择2
-      - 自动选择3
-      - 故障转移
-      - 故障转移2
-      - 美国节点
-      - 狮城节点
-      - 日本节点
-      - 韩国节点
-      - 香港节点
-      - 官方优选
-      - 美国节点2
-      - 狮城节点2
-      - 日本节点2
-      - 韩国节点2
-      - 香港节点2
-      - 官方优选2
-      - 手动切换
-      - DIRECT
-  - name:  油管视频
+    proxies: [节点选择, 自动选择, 自动选择2, 自动选择3, 故障转移, 故障转移2, 美国节点, 狮城节点, 日本节点, 韩国节点, 香港节点, 官方优选, 美国节点2, 狮城节点2, 日本节点2, 韩国节点2, 香港节点2, 官方优选2, 手动切换, DIRECT]
+  - name: 油管视频
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/YouTube.png
     type: select
-    proxies:
-      - 节点选择
-      - 自动选择
-      - 自动选择2
-      - 自动选择3
-      - 故障转移
-      - 故障转移2
-      - 美国节点
-      - 狮城节点
-      - 日本节点
-      - 韩国节点
-      - 香港节点
-      - 官方优选
-      - 美国节点2
-      - 狮城节点2
-      - 日本节点2
-      - 韩国节点2
-      - 香港节点2
-      - 官方优选2
-      - 手动切换
-      - DIRECT
-  - name:  奈飞视频
+    proxies: [节点选择, 自动选择, 自动选择2, 自动选择3, 故障转移, 故障转移2, 美国节点, 狮城节点, 日本节点, 韩国节点, 香港节点, 官方优选, 美国节点2, 狮城节点2, 日本节点2, 韩国节点2, 香港节点2, 官方优选2, 手动切换, DIRECT]
+  - name: 奈飞视频
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Netflix.png
     type: select
-    proxies:
-      - 节点选择
-      - 自动选择
-      - 自动选择2
-      - 自动选择3
-      - 故障转移
-      - 故障转移2
-      - 美国节点
-      - 狮城节点
-      - 日本节点
-      - 韩国节点
-      - 香港节点
-      - 官方优选
-      - 美国节点2
-      - 狮城节点2
-      - 日本节点2
-      - 韩国节点2
-      - 香港节点2
-      - 官方优选2
-      - 手动切换
-      - DIRECT
-    filters:
-      - "(?i)NF|奈飞|解锁|Netflix|NETFLIX|Media|MITM"
-  - name:  巴哈姆特
+    proxies: [节点选择, 自动选择, 自动选择2, 自动选择3, 故障转移, 故障转移2, 美国节点, 狮城节点, 日本节点, 韩国节点, 香港节点, 官方优选, 美国节点2, 狮城节点2, 日本节点2, 韩国节点2, 香港节点2, 官方优选2, 手动切换, DIRECT]
+    filters: ["(?i)NF|奈飞|解锁|Netflix|NETFLIX|Media|MITM"]
+  - name: 巴哈姆特
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Bahamut.png
     type: select
-    proxies:
-      - 节点选择
-      - 自动选择
-      - 自动选择2
-      - 自动选择3
-      - 故障转移
-      - 故障转移2
-      - 美国节点
-      - 狮城节点
-      - 日本节点
-      - 韩国节点
-      - 香港节点
-      - 官方优选
-      - 美国节点2
-      - 狮城节点2
-      - 日本节点2
-      - 韩国节点2
-      - 香港节点2
-      - 官方优选2
-      - 手动切换
-      - DIRECT
-  - name:  国外媒体
+    proxies: [节点选择, 自动选择, 自动选择2, 自动选择3, 故障转移, 故障转移2, 美国节点, 狮城节点, 日本节点, 韩国节点, 香港节点, 官方优选, 美国节点2, 狮城节点2, 日本节点2, 韩国节点2, 香港节点2, 官方优选2, 手动切换, DIRECT]
+  - name: 国外媒体
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/ForeignMedia.png
     type: select
-    proxies:
-      - 节点选择
-      - 自动选择
-      - 自动选择2
-      - 自动选择3
-      - 故障转移
-      - 故障转移2
-      - 美国节点
-      - 狮城节点
-      - 日本节点
-      - 韩国节点
-      - 香港节点
-      - 官方优选
-      - 美国节点2
-      - 狮城节点2
-      - 日本节点2
-      - 韩国节点2
-      - 香港节点2
-      - 官方优选2
-      - 手动切换
-      - DIRECT
-    filters:
-      - "(?i)MITM|emby|Emby"
+    proxies: [节点选择, 自动选择, 自动选择2, 自动选择3, 故障转移, 故障转移2, 美国节点, 狮城节点, 日本节点, 韩国节点, 香港节点, 官方优选, 美国节点2, 狮城节点2, 日本节点2, 韩国节点2, 香港节点2, 官方优选2, 手动切换, DIRECT]
+    filters: ["(?i)MITM|emby|Emby"]
   - name: 微软Bing
     icon: https://testingcf.jsdelivr.net/gh/shindgewongxj/WHATSINStash@master/icon/bing.png
     type: select
-    proxies:
-      - 节点选择
-      - DIRECT
-      - 自动选择
-      - 自动选择2
-      - 自动选择3
-      - 故障转移
-      - 故障转移2
-      - 美国节点
-      - 狮城节点
-      - 日本节点
-      - 韩国节点
-      - 香港节点
-      - 官方优选
-      - 美国节点2
-      - 狮城节点2
-      - 日本节点2
-      - 韩国节点2
-      - 香港节点2
-      - 官方优选2
-      - 手动切换
+    proxies: [节点选择, DIRECT, 自动选择, 自动选择2, 自动选择3, 故障转移, 故障转移2, 美国节点, 狮城节点, 日本节点, 韩国节点, 香港节点, 官方优选, 美国节点2, 狮城节点2, 日本节点2, 韩国节点2, 香港节点2, 官方优选2, 手动切换]
   - name: 微软云盘
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/OneDrive.png
     type: select
-    proxies:
-      - 节点选择
-      - DIRECT
-      - 自动选择
-      - 自动选择2
-      - 自动选择3
-      - 故障转移
-      - 故障转移2
-      - 美国节点
-      - 狮城节点
-      - 日本节点
-      - 韩国节点
-      - 香港节点
-      - 官方优选
-      - 美国节点2
-      - 狮城节点2
-      - 日本节点2
-      - 韩国节点2
-      - 香港节点2
-      - 官方优选2
-      - 手动切换
+    proxies: [节点选择, DIRECT, 自动选择, 自动选择2, 自动选择3, 故障转移, 故障转移2, 美国节点, 狮城节点, 日本节点, 韩国节点, 香港节点, 官方优选, 美国节点2, 狮城节点2, 日本节点2, 韩国节点2, 香港节点2, 官方优选2, 手动切换]
   - name: 微软服务
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Microsoft.png
     type: select
-    proxies:
-      - 节点选择
-      - DIRECT
-      - 自动选择
-      - 自动选择2
-      - 自动选择3
-      - 故障转移
-      - 故障转移2
-      - 美国节点
-      - 狮城节点
-      - 日本节点
-      - 韩国节点
-      - 香港节点
-      - 官方优选
-      - 美国节点2
-      - 狮城节点2
-      - 日本节点2
-      - 韩国节点2
-      - 香港节点2
-      - 官方优选2
-      - 手动切换
-  - name:  苹果服务
+    proxies: [节点选择, DIRECT, 自动选择, 自动选择2, 自动选择3, 故障转移, 故障转移2, 美国节点, 狮城节点, 日本节点, 韩国节点, 香港节点, 官方优选, 美国节点2, 狮城节点2, 日本节点2, 韩国节点2, 香港节点2, 官方优选2, 手动切换]
+  - name: 苹果服务
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Apple.png
     type: select
-    proxies:
-      - 节点选择
-      - DIRECT
-      - 自动选择
-      - 自动选择2
-      - 自动选择3
-      - 故障转移
-      - 故障转移2
-      - 美国节点
-      - 狮城节点
-      - 日本节点
-      - 韩国节点
-      - 香港节点
-      - 官方优选
-      - 美国节点2
-      - 狮城节点2
-      - 日本节点2
-      - 韩国节点2
-      - 香港节点2
-      - 官方优选2
-      - 手动切换
-  - name:  谷歌FCM
+    proxies: [节点选择, DIRECT, 自动选择, 自动选择2, 自动选择3, 故障转移, 故障转移2, 美国节点, 狮城节点, 日本节点, 韩国节点, 香港节点, 官方优选, 美国节点2, 狮城节点2, 日本节点2, 韩国节点2, 香港节点2, 官方优选2, 手动切换]
+  - name: 谷歌FCM
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Google_Search.png
     type: select
-    proxies:
-      - 节点选择
-      - DIRECT
-      - 自动选择
-      - 自动选择2
-      - 自动选择3
-      - 故障转移
-      - 故障转移2
-      - 美国节点
-      - 狮城节点
-      - 日本节点
-      - 韩国节点
-      - 香港节点
-      - 官方优选
-      - 美国节点2
-      - 狮城节点2
-      - 日本节点2
-      - 韩国节点2
-      - 香港节点2
-      - 官方优选2
-      - 手动切换
-  - name:  游戏平台
+    proxies: [节点选择, DIRECT, 自动选择, 自动选择2, 自动选择3, 故障转移, 故障转移2, 美国节点, 狮城节点, 日本节点, 韩国节点, 香港节点, 官方优选, 美国节点2, 狮城节点2, 日本节点2, 韩国节点2, 香港节点2, 官方优选2, 手动切换]
+  - name: 游戏平台
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Game.png
     type: select
-    proxies:
-      - 节点选择
-      - DIRECT
-      - 自动选择
-      - 自动选择2
-      - 自动选择3
-      - 故障转移
-      - 故障转移2
-      - 美国节点
-      - 狮城节点
-      - 日本节点
-      - 韩国节点
-      - 香港节点
-      - 官方优选
-      - 美国节点2
-      - 狮城节点2
-      - 日本节点2
-      - 韩国节点2
-      - 香港节点2
-      - 官方优选2
-      - 手动切换
-  - name:  国内媒体
+    proxies: [节点选择, DIRECT, 自动选择, 自动选择2, 自动选择3, 故障转移, 故障转移2, 美国节点, 狮城节点, 日本节点, 韩国节点, 香港节点, 官方优选, 美国节点2, 狮城节点2, 日本节点2, 韩国节点2, 香港节点2, 官方优选2, 手动切换]
+  - name: 国内媒体
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/DomesticMedia.png
     type: select
-    proxies:
-      - DIRECT
-      - 节点选择
-      - 自动选择
-      - 自动选择2
-      - 自动选择3
-      - 故障转移
-      - 故障转移2
-      - 美国节点
-      - 狮城节点
-      - 日本节点
-      - 韩国节点
-      - 香港节点
-      - 官方优选
-      - 美国节点2
-      - 狮城节点2
-      - 日本节点2
-      - 韩国节点2
-      - 香港节点2
-      - 官方优选2
-      - 手动切换
-    filters:
-      - "(?i)网易|音乐|解锁|Music|NetEase"
-  - name:  哔哩哔哩
+    proxies: [DIRECT, 节点选择, 自动选择, 自动选择2, 自动选择3, 故障转移, 故障转移2, 美国节点, 狮城节点, 日本节点, 韩国节点, 香港节点, 官方优选, 美国节点2, 狮城节点2, 日本节点2, 韩国节点2, 香港节点2, 官方优选2, 手动切换]
+    filters: ["(?i)网易|音乐|解锁|Music|NetEase"]
+  - name: 哔哩哔哩
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/bilibili.png
     type: select
-    proxies:
-      - DIRECT
-      - 节点选择
-      - 自动选择
-      - 自动选择2
-      - 自动选择3
-      - 故障转移
-      - 故障转移2
-      - 美国节点
-      - 狮城节点
-      - 日本节点
-      - 韩国节点
-      - 香港节点
-      - 官方优选
-      - 美国节点2
-      - 狮城节点2
-      - 日本节点2
-      - 韩国节点2
-      - 香港节点2
-      - 官方优选2
-      - 手动切换
-  - name:  网易音乐
+    proxies: [DIRECT, 节点选择, 自动选择, 自动选择2, 自动选择3, 故障转移, 故障转移2, 美国节点, 狮城节点, 日本节点, 韩国节点, 香港节点, 官方优选, 美国节点2, 狮城节点2, 日本节点2, 韩国节点2, 香港节点2, 官方优选2, 手动切换]
+  - name: 网易音乐
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Netease_Music.png
     type: select
-    proxies:
-      - DIRECT
-      - 节点选择
-      - 自动选择
-      - 自动选择2
-      - 自动选择3
-      - 故障转移
-      - 故障转移2
-      - 美国节点
-      - 狮城节点
-      - 日本节点
-      - 韩国节点
-      - 香港节点
-      - 官方优选
-      - 美国节点2
-      - 狮城节点2
-      - 日本节点2
-      - 韩国节点2
-      - 香港节点2
-      - 官方优选2
-      - 手动切换
-    filters:
-      - "(?i)网易|音乐|解锁|Music|NetEase"
-  - name:  广告拦截
+    proxies: [DIRECT, 节点选择, 自动选择, 自动选择2, 自动选择3, 故障转移, 故障转移2, 美国节点, 狮城节点, 日本节点, 韩国节点, 香港节点, 官方优选, 美国节点2, 狮城节点2, 日本节点2, 韩国节点2, 香港节点2, 官方优选2, 手动切换]
+    filters: ["(?i)网易|音乐|解锁|Music|NetEase"]
+  - name: 广告拦截
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/AdBlack.png
     type: select
-    proxies:
-      - REJECT
-      - DIRECT
-  - name:  应用净化
+    proxies: [REJECT, DIRECT]
+  - name: 应用净化
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Hijacking.png
     type: select
-    proxies:
-      - REJECT
-      - DIRECT
-  - name:  全球直连
+    proxies: [REJECT, DIRECT]
+  - name: 全球直连
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Direct.png
     type: select
-    proxies:
-      - DIRECT
-      - 节点选择
-      - 自动选择
-      - 自动选择2
-      - 自动选择3
-      - 故障转移
-      - 故障转移2
-      - 美国节点
-      - 狮城节点
-      - 日本节点
-      - 韩国节点
-      - 香港节点
-      - 官方优选
-      - 美国节点2
-      - 狮城节点2
-      - 日本节点2
-      - 韩国节点2
-      - 香港节点2
-      - 官方优选2
-      - 手动切换
-  - name:  漏网之鱼
+    proxies: [DIRECT, 节点选择, 自动选择, 自动选择2, 自动选择3, 故障转移, 故障转移2, 美国节点, 狮城节点, 日本节点, 韩国节点, 香港节点, 官方优选, 美国节点2, 狮城节点2, 日本节点2, 韩国节点2, 香港节点2, 官方优选2, 手动切换]
+  - name: 漏网之鱼
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Final.png
     type: select
-    proxies:
-      - 节点选择
-      - DIRECT
-      - 自动选择
-      - 自动选择2
-      - 自动选择3
-      - 故障转移
-      - 故障转移2
-      - 美国节点
-      - 狮城节点
-      - 日本节点
-      - 韩国节点
-      - 香港节点
-      - 官方优选
-      - 美国节点2
-      - 狮城节点2
-      - 日本节点2
-      - 韩国节点2
-      - 香港节点2
-      - 官方优选2
-      - 手动切换
+    proxies: [节点选择, DIRECT, 自动选择, 自动选择2, 自动选择3, 故障转移, 故障转移2, 美国节点, 狮城节点, 日本节点, 韩国节点, 香港节点, 官方优选, 美国节点2, 狮城节点2, 日本节点2, 韩国节点2, 香港节点2, 官方优选2, 手动切换]
   - name: 美国节点
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/United_States.png
     type: load-balance
@@ -570,7 +172,7 @@ proxy-groups:
     include-all: true
     filter: (?i)港|HK|hk|Hong Kong|HongKong|hongkong|HKG
   - name: 官方优选
-    icon: https://raw.githubusercontent.com/JunfenZhang1/wanpan_pub/refs/heads/main/icons/svg/youxuan.svg
+    icon: https://testingcf.jsdelivr.net/gh/JunfenZhang1/wanpan_pub@main/icons/svg/youxuan.svg
     type: load-balance
     strategy: consistent-hashing
     url: http://www.gstatic.com/generate_204
@@ -619,7 +221,7 @@ proxy-groups:
     include-all: true
     filter: (?i)港|HK|hk|Hong Kong|HongKong|hongkong|HKG
   - name: 官方优选2
-    icon: https://raw.githubusercontent.com/JunfenZhang1/wanpan_pub/refs/heads/main/icons/svg/youxuan.svg
+    icon: https://testingcf.jsdelivr.net/gh/JunfenZhang1/wanpan_pub@main/icons/svg/youxuan.svg
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 60
