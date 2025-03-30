@@ -184,7 +184,7 @@ proxy-groups:
     type: url-test
     include-all: true
     exclude-type: direct
-    filter: "(?i)^(?!.*(?:🇭🇰|🇯🇵|🇺🇸|🇸🇬|🇨🇳|港|hk|hongkong|台|tw|taiwan|日|jp|japan|新|sg|singapore|美|us|unitedstates)).*"
+    filter: "(?i)^(?!.*(?:🇭🇰|🇯🇵|🇺🇸|🇸🇬|🇨🇳|港|hk|hongkong|台|tw|taiwan|jp|japan|新|sg|singapore|美|us|unitedstates)).*"
 
   - name: 负载均衡(散列)
     type: load-balance
