@@ -2,7 +2,7 @@ proxy-groups:
   - name: 节点选择
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Proxy.png
     type: select
-    proxies: [故障转移all, 故障转移, 自动选择, 自动选择all, 手动切换, 负债均衡, 狮城, 台湾, 日本, 美国, 韩国, 香港, 其它, 其它s, DIRECT]
+    proxies: [故障转移, 故障转移all, 自动选择, 自动选择all, 手动切换, 负债均衡, 狮城, 台湾, 日本, 美国, 韩国, 香港, 其它, 其它s, DIRECT]
   - name: 手动切换
     icon: https://testingcf.jsdelivr.net/gh/shindgewongxj/WHATSINStash@master/icon/select.png
     include-all: true
