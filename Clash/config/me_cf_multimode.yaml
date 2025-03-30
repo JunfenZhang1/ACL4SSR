@@ -45,7 +45,7 @@ proxy-groups:
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Hijacking.png
     type: select
     include-all: true
-    proxies: [手动切换, 故障转移, 故障转移all, 自动选择, 自动选择all, 负债均衡, ip净化, 狮城, 台湾, 日本, 美国, 韩国, 香港, 其它, 其它s]
+    proxies: [手动切换, 故障转移, 故障转移all, 自动选择, 自动选择all, 负债均衡, 狮城, 台湾, 日本, 美国, 韩国, 香港, 其它, 其它s]
     filter: "(?i)^(?!.*(?:🇭🇰|🇯🇵|🇺🇸|🇸🇬|🇨🇳|港|hk|hongkong|中|cn)).*"
   - name: 电报消息
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Telegram.png
