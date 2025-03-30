@@ -312,7 +312,7 @@ proxy-groups:
     type: load-balance
     strategy: consistent-hashing
     include-all: true
-    filter: (?i)日本|川日|东京|大阪|泉日|埼玉|沪日|深日|JP|Japan|Tokyo|NRT|KIX|日|[^-]
+    filter: (?i)日本|川日|东京|大阪|泉日|埼玉|沪日|深日|JP|Japan|Tokyo|NRT|KIX|日
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
@@ -352,6 +352,22 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
+  # - name: 其它地区
+  #   icon: https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/flags/un.svg
+  #   type: load-balance
+  #   strategy: consistent-hashing
+  #   include-all: true
+  #   exclude-type: direct
+  #   filter: "(?i)^(?!.*(?:🇭🇰|🇯🇵|🇺🇸|🇸🇬|🇨🇳|港|hk|hongkong|台|tw|taiwan|日|jp|japan|新|sg|singapore|美|us|unitedstates|KR|Korea|KOR|Seoul|首尔|春川|韩|韓|ICN)).*"
+  #   url: http://www.gstatic.com/generate_204
+  #   interval: 300
+  #   tolerance: 50
+  # - name: 其它地区s
+  #   icon: https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/flags/un.svg
+  #   type: select
+  #   include-all: true
+  #   exclude-type: direct
+  #   filter: "(?i)^(?!.*(?:🇭🇰|🇯🇵|🇺🇸|🇸🇬|🇨🇳|港|hk|hongkong|台|tw|taiwan|日|jp|japan|新|sg|singapore|美|us|unitedstates|KR|Korea|KOR|Seoul|首尔|春川|韩|韓|ICN)).*"
 
 rule-providers:
   me_direct:
