@@ -2,7 +2,7 @@ proxy-groups:
   - name: 节点选择
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Proxy.png
     type: select
-    proxies: [故障转移, 故障转移all, 自动选择, 自动选择all, 手动切换, 负债均衡, 狮城, 台湾, 日本, 美国, 韩国, 香港, 其它, 其它s, DIRECT]
+    proxies: [故障转移, 故障转移all, 自动选择, 自动选择all, 手动切换, 负债均衡, ip净化, 狮城, 台湾, 日本, 美国, 韩国, 香港, 其它, 其它s, DIRECT]
   - name: 手动切换
     icon: https://testingcf.jsdelivr.net/gh/shindgewongxj/WHATSINStash@master/icon/select.png
     include-all: true
@@ -41,54 +41,59 @@ proxy-groups:
     interval: 300
     tolerance: 150
     include-all: true
+  - name: ip净化
+    icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Hijacking.png
+    type: select
+    include-all: true
+    filter: "(?i)^(?!.*(?:🇭🇰|🇯🇵|🇺🇸|🇸🇬|🇨🇳|港|hk|hongkong|中|cn)).*"
   - name: 电报消息
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Telegram.png
     type: select
-    proxies: [节点选择, 自动选择, 自动选择all, 手动切换, 故障转移, 故障转移all, 负债均衡, 狮城, 台湾, 日本, 美国, 韩国, 香港, 其它, 其它s, DIRECT]
+    proxies: [节点选择, 自动选择, 自动选择all, 手动切换, 故障转移, 故障转移all, 负债均衡, ip净化, 狮城, 台湾, 日本, 美国, 韩国, 香港, 其它, 其它s, DIRECT]
   - name: OpenAi
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Bot.png
     type: select
-    proxies: [节点选择, 自动选择, 自动选择all, 手动切换, 故障转移, 故障转移all, 负债均衡, 狮城, 台湾, 日本, 美国, 韩国, 香港, 其它, 其它s, DIRECT]
+    proxies: [节点选择, 自动选择, 自动选择all, 手动切换, 故障转移, 故障转移all, 负债均衡, ip净化, 狮城, 台湾, 日本, 美国, 韩国, 香港, 其它, 其它s, DIRECT]
   - name: 油管视频
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/YouTube.png
     type: select
-    proxies: [节点选择, 自动选择, 自动选择all, 手动切换, 故障转移, 故障转移all, 故障转移all, 负债均衡, 狮城, 台湾, 日本, 美国, 韩国, 香港, 其它, 其它s, DIRECT]
+    proxies: [节点选择, 自动选择, 自动选择all, 手动切换, 故障转移, 故障转移all, 故障转移all, 负债均衡, ip净化, 狮城, 台湾, 日本, 美国, 韩国, 香港, 其它, 其它s, DIRECT]
   - name: 奈飞视频
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Netflix.png
     type: select
-    proxies: [节点选择, 自动选择, 自动选择all, 手动切换, 故障转移, 故障转移all, 负债均衡, 狮城, 台湾, 日本, 美国, 韩国, 香港, 其它, 其它s, DIRECT]
+    proxies: [节点选择, 自动选择, 自动选择all, 手动切换, 故障转移, 故障转移all, 负债均衡, ip净化, 狮城, 台湾, 日本, 美国, 韩国, 香港, 其它, 其它s, DIRECT]
     filters:
       - "(?i)NF|奈飞|解锁|Netflix|NETFLIX|Media|MITM"
   - name: 国外媒体
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/ForeignMedia.png
     type: select
-    proxies: [节点选择, 自动选择, 自动选择all, 手动切换, 故障转移, 故障转移all, 负债均衡, 狮城, 台湾, 日本, 美国, 韩国, 香港, 其它, 其它s, DIRECT]
+    proxies: [节点选择, 自动选择, 自动选择all, 手动切换, 故障转移, 故障转移all, 负债均衡, ip净化, 狮城, 台湾, 日本, 美国, 韩国, 香港, 其它, 其它s, DIRECT]
     filters:
       - "(?i)MITM|emby|Emby"
   - name: 谷歌FCM
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Google_Search.png
     type: select
-    proxies: [节点选择, 自动选择, 自动选择all, 手动切换, 故障转移, 故障转移all, 负债均衡, 狮城, 台湾, 日本, 美国, 韩国, 香港, 其它, 其它s, DIRECT]
+    proxies: [节点选择, 自动选择, 自动选择all, 手动切换, 故障转移, 故障转移all, 负债均衡, ip净化, 狮城, 台湾, 日本, 美国, 韩国, 香港, 其它, 其它s, DIRECT]
   - name: 微软Bing
     icon: https://testingcf.jsdelivr.net/gh/shindgewongxj/WHATSINStash@master/icon/bing.png
     type: select
-    proxies: [节点选择, 自动选择, 自动选择all, 手动切换, 故障转移, 故障转移all, 负债均衡, 狮城, 台湾, 日本, 美国, 韩国, 香港, 其它, 其它s, DIRECT]
+    proxies: [节点选择, 自动选择, 自动选择all, 手动切换, 故障转移, 故障转移all, 负债均衡, ip净化, 狮城, 台湾, 日本, 美国, 韩国, 香港, 其它, 其它s, DIRECT]
   - name: 微软云盘
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/OneDrive.png
     type: select
-    proxies: [节点选择, 自动选择, 自动选择all, 手动切换, 故障转移, 故障转移all, 负债均衡, 狮城, 台湾, 日本, 美国, 韩国, 香港, 其它, 其它s, DIRECT]
+    proxies: [节点选择, 自动选择, 自动选择all, 手动切换, 故障转移, 故障转移all, 负债均衡, ip净化, 狮城, 台湾, 日本, 美国, 韩国, 香港, 其它, 其它s, DIRECT]
   - name: 微软服务
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Microsoft.png
     type: select
-    proxies: [节点选择, 自动选择, 自动选择all, 手动切换, 故障转移, 故障转移all, 负债均衡, 狮城, 台湾, 日本, 美国, 韩国, 香港, 其它, 其它s, DIRECT]
+    proxies: [节点选择, 自动选择, 自动选择all, 手动切换, 故障转移, 故障转移all, 负债均衡, ip净化, 狮城, 台湾, 日本, 美国, 韩国, 香港, 其它, 其它s, DIRECT]
   - name: 游戏平台
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Game.png
     type: select
-    proxies: [节点选择, 自动选择, 自动选择all, 手动切换, 故障转移, 故障转移all, 负债均衡, 狮城, 台湾, 日本, 美国, 韩国, 香港, 其它, 其它s, DIRECT]
+    proxies: [节点选择, 自动选择, 自动选择all, 手动切换, 故障转移, 故障转移all, 负债均衡, ip净化, 狮城, 台湾, 日本, 美国, 韩国, 香港, 其它, 其它s, DIRECT]
   - name: 漏网之鱼
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Final.png
     type: select
-    proxies: [节点选择, 自动选择, 自动选择all, 手动切换, 故障转移, 故障转移all, 负债均衡, 狮城, 台湾, 日本, 美国, 韩国, 香港, 其它, 其它s, DIRECT]
+    proxies: [节点选择, 自动选择, 自动选择all, 手动切换, 故障转移, 故障转移all, 负债均衡, ip净化, 狮城, 台湾, 日本, 美国, 韩国, 香港, 其它, 其它s, DIRECT]
   - name: 巴哈姆特
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Bahamut.png
     type: select
@@ -96,15 +101,15 @@ proxy-groups:
   - name: 哔哩哔哩
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/bilibili.png
     type: select
-    proxies: [DIRECT, 台湾, 香港, 节点选择, 自动选择, 自动选择all, 手动切换, 故障转移, 故障转移all, 负债均衡, 狮城, 日本, 美国, 韩国, 其它, 其它s]
+    proxies: [DIRECT, 台湾, 香港, 节点选择, 自动选择, 自动选择all, 手动切换, 故障转移, 故障转移all, 负债均衡, ip净化, 狮城, 日本, 美国, 韩国, 其它, 其它s]
   - name: 国内媒体
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/DomesticMedia.png
     type: select
-    proxies: [DIRECT, 节点选择, 自动选择, 自动选择all, 手动切换, 故障转移, 故障转移all, 负债均衡, 狮城, 台湾, 日本, 美国, 韩国, 香港, 其它, 其它s]
+    proxies: [DIRECT, 节点选择, 自动选择, 自动选择all, 手动切换, 故障转移, 故障转移all, 负债均衡, ip净化, 狮城, 台湾, 日本, 美国, 韩国, 香港, 其它, 其它s]
   - name: 苹果服务
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Apple.png
     type: select
-    proxies: [DIRECT, 节点选择, 自动选择, 自动选择all, 手动切换, 故障转移, 故障转移all, 负债均衡, 狮城, 台湾, 日本, 美国, 韩国, 香港, 其它, 其它s]
+    proxies: [DIRECT, 节点选择, 自动选择, 自动选择all, 手动切换, 故障转移, 故障转移all, 负债均衡, ip净化, 狮城, 台湾, 日本, 美国, 韩国, 香港, 其它, 其它s]
   - name: 网易音乐
     icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Netease_Music.png
     type: select
@@ -183,7 +188,7 @@ proxy-groups:
     strategy: consistent-hashing
     include-all: true
     exclude-type: direct
-    filter: "(?i)^(?!.*(?:🇭🇰|🇯🇵|🇺🇸|🇸🇬|🇨🇳|港|hk|hongkong|台|tw|taiwan|jp|japan|新|sg|singapore|美|us|unitedstates|KR|Korea|KOR|Seoul|首尔|春川|韩|韓|ICN)).*"
+    filter: "(?i)^(?!.*(?:🇭🇰|🇯🇵|🇺🇸|🇸🇬|🇨🇳|港|hk|hongkong|台|tw|taiwan|jp|japan|新|sg|singapore|美|us|unitedstates|KR|Korea|KOR|Seoul|首尔|春川|韩|韓|ICN|中|cn)).*"
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
@@ -192,7 +197,7 @@ proxy-groups:
     type: select
     include-all: true
     exclude-type: direct
-    filter: "(?i)^(?!.*(?:🇭🇰|🇯🇵|🇺🇸|🇸🇬|🇨🇳|港|hk|hongkong|台|tw|taiwan|jp|japan|新|sg|singapore|美|us|unitedstates|KR|Korea|KOR|Seoul|首尔|春川|韩|韓|ICN)).*"
+    filter: "(?i)^(?!.*(?:🇭🇰|🇯🇵|🇺🇸|🇸🇬|🇨🇳|港|hk|hongkong|台|tw|taiwan|jp|japan|新|sg|singapore|美|us|unitedstates|KR|Korea|KOR|Seoul|首尔|春川|韩|韓|ICN|中|cn)).*"
 
 rule-providers:
   me_direct:
@@ -200,6 +205,12 @@ rule-providers:
     behavior: classical
     url: https://raw.githubusercontent.com/JunfenZhang1/ACL4SSR/refs/heads/me/Clash/me_direct.list
     path: ./ruleset/me_direct.list
+    interval: 86400
+  me_clean:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/JunfenZhang1/ACL4SSR/refs/heads/me/Clash/me_clean.list
+    path: ./ruleset/me_clean.list
     interval: 86400
   CFnat:
     type: http
@@ -444,6 +455,7 @@ rule-providers:
 
 rules:
   - RULE-SET,me_direct,全球直连
+  - RULE-SET,me_clean,ip净化
   - RULE-SET,CFnat,全球直连
   - RULE-SET,LocalAreaNetwork,全球直连
   - RULE-SET,UnBan,全球直连
