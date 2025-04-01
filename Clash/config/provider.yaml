@@ -32,7 +32,7 @@ proxy-groups:
     interval: 180
     proxies: [狮城, 台湾, 日本, 美国, 韩国, 香港, 其它]
     include-all: true
-    filters: (?i)hysteria2
+    filter: (?i)hysteria2
   - name: 故障转移all
     icon: https://www.clashverge.dev/assets/icons/ambulance.svg
     type: fallback
