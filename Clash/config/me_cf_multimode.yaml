@@ -99,7 +99,7 @@ proxy-groups:
     type: url-test
     include-all: true
     exclude-type: direct
-    filter: "(?i)^(?!.*(?:🇭🇰|🇯🇵|🇺🇸|🇸🇬|🇨🇳|港|hk|hongkong|台|tw|taiwan|jp|japan|新|sg|singapore|美|us|unitedstates|KR|Korea|KOR|Seoul|首尔|春川|韩|韓|ICN|中|cn|[0]|hysteria2)).*"
+    filter: (?i)^(?!.*(?:🇭🇰|🇯🇵|🇺🇸|🇸🇬|🇨🇳|港|hk|hongkong|台|tw|taiwan|jp|japan|新|sg|singapore|美|us|unitedstates|KR|Korea|KOR|Seoul|首尔|春川|韩|韓|ICN|中|cn|\[0\]|hysteria2)).*
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
@@ -108,7 +108,7 @@ proxy-groups:
     type: select
     include-all: true
     exclude-type: direct
-    filter: "(?i)^(?!.*(?:🇭🇰|🇯🇵|🇺🇸|🇸🇬|🇨🇳|港|hk|hongkong|台|tw|taiwan|jp|japan|新|sg|singapore|美|us|unitedstates|KR|Korea|KOR|Seoul|首尔|春川|韩|韓|ICN|中|cn|[0]|hysteria2)).*"
+    filter: (?i)^(?!.*(?:🇭🇰|🇯🇵|🇺🇸|🇸🇬|🇨🇳|港|hk|hongkong|台|tw|taiwan|jp|japan|新|sg|singapore|美|us|unitedstates|KR|Korea|KOR|Seoul|首尔|春川|韩|韓|ICN|中|cn|\[0\]|hysteria2)).*
 
 rule-providers:
   me_direct:
