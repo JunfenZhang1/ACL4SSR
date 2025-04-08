@@ -47,7 +47,7 @@ proxy-groups:
     include-all: true
   - name: 🤖Ai
     type: select
-    proxies: [☑️手动切换, 🔯故障转移, 🚀节点选择, ♻️自动选择, 🔮负债均衡, 🍃ip净化, DIRECT]
+    proxies: [🚀节点选择, ☑️手动切换, 🔯故障转移, ♻️自动选择, 🔮负债均衡, 🍃ip净化, DIRECT]
   - name: 📺哔哩哔哩
     type: select
     proxies: [DIRECT, 🚀节点选择, ☑️手动切换, 🔯故障转移, ♻️自动选择, 🔮负债均衡, 🍃ip净化]
