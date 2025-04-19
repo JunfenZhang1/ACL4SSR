@@ -1,9 +1,9 @@
 proxy-groups:
   - name: 🚀节点选择
     type: select
-    proxies: [🔯故障转移, ☑️手动切换, ♻️自动选择, ♻️自动选择all, 🍃ip净化, 狮城, 台湾, 日本, 美国, 韩国, 香港, 其它, 其它s, DIRECT]
+    proxies: [🔯故障转移, ☑️手动切换, ♻️自动选择, ♻️自动选择all, 🍃ip净化, 美国, 日本, 狮城, 台湾, 韩国, 香港, 其它, 其它s, DIRECT]
   - name: ☑️手动切换
-    proxies: [🔯故障转移, ♻️自动选择, ♻️自动选择all, 狮城, 台湾, 日本, 美国, 韩国, 香港, 其它, 其它s]
+    proxies: [🔯故障转移, ♻️自动选择, ♻️自动选择all, 美国, 日本, 狮城, 台湾, 韩国, 香港, 其它, 其它s]
     include-all: true
     type: select
   - name: ♻️自动选择
@@ -11,7 +11,7 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 180
     tolerance: 50
-    proxies: [日本, 美国, 狮城, 台湾, 韩国, 香港, 其它]
+    proxies: [美国, 日本, 狮城, 台湾, 韩国, 香港, 其它]
   - name: ♻️自动选择all
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -22,24 +22,24 @@ proxy-groups:
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 180
-    proxies: [日本, 美国, 狮城, 台湾, 韩国, 香港, 其它]
+    proxies: [美国, 日本, 狮城, 台湾, 韩国, 香港, 其它]
   - name: 🍃ip净化
     type: select
     include-all: true
-    proxies: [☑️手动切换, 🔯故障转移, ♻️自动选择, ♻️自动选择all, 日本, 美国, 狮城, 台湾, 韩国, 香港, 其它, 其它s]
+    proxies: [☑️手动切换, 🔯故障转移, ♻️自动选择, ♻️自动选择all, 美国, 日本, 狮城, 台湾, 韩国, 香港, 其它, 其它s]
     filter: "(?i)^(?!.*(?:🇭🇰狮城, 台湾, 日本, 美国, 韩国, 香港, 其它|🇨🇳|港|hk|hongkong|中|cn)).*"
   - name: 🤖Ai
     type: select
-    proxies: [🚀节点选择, ☑️手动切换, 🔯故障转移, ♻️自动选择, ♻️自动选择all, 🍃ip净化, 日本, 美国, 狮城, 台湾, 韩国, 香港, 其它, 其它s, DIRECT]
+    proxies: [🚀节点选择, ☑️手动切换, 🔯故障转移, ♻️自动选择, ♻️自动选择all, 🍃ip净化, 美国, 日本, 狮城, 台湾, 韩国, 香港, 其它, 其它s, DIRECT]
   - name: 📺哔哩哔哩
     type: select
-    proxies: [DIRECT, 台湾, 香港, 🚀节点选择, ☑️手动切换, 🔯故障转移, ♻️自动选择, ♻️自动选择all, 🍃ip净化, 日本, 美国, 狮城, 台湾, 韩国, 香港, 其它, 其它s]
+    proxies: [DIRECT, 台湾, 香港, 🚀节点选择, ☑️手动切换, 🔯故障转移, ♻️自动选择, ♻️自动选择all, 🍃ip净化, 美国, 日本, 狮城, 台湾, 韩国, 香港, 其它, 其它s]
   - name: 🐟漏网之鱼
     type: select
-    proxies: [🚀节点选择, ☑️手动切换, 🔯故障转移, ♻️自动选择, ♻️自动选择all, 🍃ip净化, 日本, 美国, 狮城, 台湾, 韩国, 香港, 其它, 其它s, DIRECT]
+    proxies: [🚀节点选择, ☑️手动切换, 🔯故障转移, ♻️自动选择, ♻️自动选择all, 🍃ip净化, 美国, 日本, 狮城, 台湾, 韩国, 香港, 其它, 其它s, DIRECT]
   - name: 🎯全球直连
     type: select
-    proxies: [DIRECT, 🚀节点选择, ☑️手动切换, 🔯故障转移, ♻️自动选择, ♻️自动选择all, 🍃ip净化, 日本, 美国, 狮城, 台湾, 韩国, 香港, 其它, 其它s]
+    proxies: [DIRECT, 🚀节点选择, ☑️手动切换, 🔯故障转移, ♻️自动选择, ♻️自动选择all, 🍃ip净化, 美国, 日本, 狮城, 台湾, 韩国, 香港, 其它, 其它s]
   - name: 🛑广告拦截
     type: select
     proxies: [REJECT, DIRECT]
