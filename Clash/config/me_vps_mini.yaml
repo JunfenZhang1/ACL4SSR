@@ -17,7 +17,11 @@ proxy-providers:
 proxy-groups:
   - name: 🚀节点选择
     type: select
-    proxies: [🔯故障转移, ☑️手动切换, ♻️自动选择, 🔮负债均衡, 🍃ip净化, DIRECT]
+    proxies: [🔯故障转移, ☑️手动切换, ♻️自动选择, 🔮负债均衡, DIRECT]
+    include-all: true
+  - name: 🍃ip净化
+    type: select
+    proxies: [🚀节点选择, 🔯故障转移, ☑️手动切换, ♻️自动选择, 🔮负债均衡]
     include-all: true
   - name: ☑️手动切换
     proxies: [🔯故障转移, ♻️自动选择, 🔮负债均衡]
@@ -40,10 +44,6 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 180
     tolerance: 50
-    include-all: true
-  - name: 🍃ip净化
-    type: select
-    proxies: [☑️手动切换, 🔯故障转移, ♻️自动选择, 🔮负债均衡]
     include-all: true
   - name: 🤖Ai
     type: select
