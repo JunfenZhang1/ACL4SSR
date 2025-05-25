@@ -7,16 +7,16 @@ proxy-groups:
     include-all: true
     proxies: [🚀节点选择, 🔯故障转移, ☑️手动切换, ♻️自动选择, ♻️自动选择all, 其它s, 美国, 狮城, 韩国, 日本, 台湾, 香港, 其它]
     filter: "(?i)^(?!.*(?:🇭🇰狮城, 台湾, 日本, 美国, 韩国, 香港, 其它|🇨🇳|港|hk|hongkong|中|cn)).*"
+  - name: ☑️手动切换
+    proxies: [🔯故障转移, ♻️自动选择, ♻️自动选择all, 其它s, 美国, 狮城, 韩国, 日本, 台湾, 香港, 其它]
+    include-all: true
+    type: select
   - name: 其它s
     icon: https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/flags/un.svg
     type: select
     include-all: true
     exclude-type: direct
     filter: (?i)^(?!.*(?:🇭🇰|🇯🇵|🇺🇸|🇸🇬|🇨🇳|港|hk|hongkong|台|tw|taiwan|jp|japan|新|sg|singapore|美|us|unitedstates|KR|Korea|KOR|Seoul|首尔|春川|韩|韓|ICN|中|cn|\[0\]|hysteria2)).*
-  - name: ☑️手动切换
-    proxies: [🔯故障转移, ♻️自动选择, ♻️自动选择all, 其它s, 美国, 狮城, 韩国, 日本, 台湾, 香港, 其它]
-    include-all: true
-    type: select
   - name: ♻️自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
