@@ -44,32 +44,6 @@ proxy-groups:
   - name: 📺哔哩哔哩
     type: select
     proxies: [DIRECT, 🇹🇼台湾, 🇭🇰香港, 🚀节点选择, 🔯故障转移, ☑️手动切换, ♻️自动选择, ♻️自动选择all, 🍃ip净化, 🇺🇸美国s, 🇺🇳其它s, 🇺🇸美国, 🇸🇬狮城, 🇰🇷韩国, 🇯🇵日本, 🇹🇼台湾, 🇭🇰香港, 🇺🇳其它]
-  - name: 🐟漏网之鱼
-    type: select
-    proxies: [🚀节点选择, 🔯故障转移, ☑️手动切换, ♻️自动选择, ♻️自动选择all, 🍃ip净化, 🇺🇸美国s, 🇺🇳其它s, 🇺🇸美国, 🇸🇬狮城, 🇰🇷韩国, 🇯🇵日本, 🇹🇼台湾, 🇭🇰香港, 🇺🇳其它, DIRECT]
-  - name: 🎯全球直连
-    type: select
-    proxies: [DIRECT, 🚀节点选择, 🔯故障转移, ☑️手动切换, ♻️自动选择, ♻️自动选择all, 🍃ip净化, 🇺🇸美国s, 🇺🇳其它s, 🇺🇸美国, 🇸🇬狮城, 🇰🇷韩国, 🇯🇵日本, 🇹🇼台湾, 🇭🇰香港, 🇺🇳其它]
-  - name: 🛑广告拦截
-    type: select
-    proxies: [REJECT, DIRECT]
-  - name: 🍃应用净化
-    type: select
-    proxies: [REJECT, DIRECT]
-  - name: 🇭🇰香港
-    type: url-test
-    include-all: true
-    filter: 港|HK|hk|Hong Kong|HongKong|hongkong|HKG|HKIA|HKG|Kowloon|新界|九龙|中环|上环|尖沙咀|湾仔|铜锣湾|旺角|油麻地|荃湾|沙田|大埔|屯门|元朗|西贡|东涌
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 50
-  - name: 🇯🇵日本
-    type: url-test
-    include-all: true
-    filter: 日本|川日|东京|大阪|泉日|埼玉|沪日|深日|JP|Japan|Tokyo|NRT|KIX
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 50
   - name: 🇺🇸美国
     type: url-test
     include-all: true
@@ -77,13 +51,6 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 150
-  - name: 🇹🇼台湾
-    type: url-test
-    include-all: true
-    filter: 台|新北|彰化|TW|Taiwan|TPE|KHH
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 50
   - name: 🇸🇬狮城
     type: url-test
     include-all: true
@@ -98,6 +65,27 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
+  - name: 🇯🇵日本
+    type: url-test
+    include-all: true
+    filter: 日本|川日|东京|大阪|泉日|埼玉|沪日|深日|JP|Japan|Tokyo|NRT|KIX
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+  - name: 🇹🇼台湾
+    type: url-test
+    include-all: true
+    filter: 台|新北|彰化|TW|Taiwan|TPE|KHH
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+  - name: 🇭🇰香港
+    type: url-test
+    include-all: true
+    filter: 港|HK|hk|Hong Kong|HongKong|hongkong|HKG|HKIA|HKG|Kowloon|新界|九龙|中环|上环|尖沙咀|湾仔|铜锣湾|旺角|油麻地|荃湾|沙田|大埔|屯门|元朗|西贡|东涌
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
   - name: 🇺🇳其它
     type: url-test
     include-all: true
@@ -106,6 +94,18 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
+  - name: 🐟漏网之鱼
+    type: select
+    proxies: [🚀节点选择, 🔯故障转移, ☑️手动切换, ♻️自动选择, ♻️自动选择all, 🍃ip净化, 🇺🇸美国s, 🇺🇳其它s, 🇺🇸美国, 🇸🇬狮城, 🇰🇷韩国, 🇯🇵日本, 🇹🇼台湾, 🇭🇰香港, 🇺🇳其它, DIRECT]
+  - name: 🎯全球直连
+    type: select
+    proxies: [DIRECT, 🚀节点选择, 🔯故障转移, ☑️手动切换, ♻️自动选择, ♻️自动选择all, 🍃ip净化, 🇺🇸美国s, 🇺🇳其它s, 🇺🇸美国, 🇸🇬狮城, 🇰🇷韩国, 🇯🇵日本, 🇹🇼台湾, 🇭🇰香港, 🇺🇳其它]
+  - name: 🛑广告拦截
+    type: select
+    proxies: [REJECT, DIRECT]
+  - name: 🍃应用净化
+    type: select
+    proxies: [REJECT, DIRECT]
 
 rule-providers:
   me_direct:
