@@ -59,42 +59,42 @@ proxy-groups:
   - name: 🇭🇰香港
     type: url-test
     include-all: true
-    filter: (?i)港|HK|hk|Hong Kong|HongKong|hongkong|HKG|HKIA|HKG|Kowloon|新界|九龙|中环|上环|尖沙咀|湾仔|铜锣湾|旺角|油麻地|荃湾|沙田|大埔|屯门|元朗|西贡|东涌
+    filter: 港|HK|hk|Hong Kong|HongKong|hongkong|HKG|HKIA|HKG|Kowloon|新界|九龙|中环|上环|尖沙咀|湾仔|铜锣湾|旺角|油麻地|荃湾|沙田|大埔|屯门|元朗|西贡|东涌
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
   - name: 🇯🇵日本
     type: url-test
     include-all: true
-    filter: (?i)🇯🇵日本|川日|东京|大阪|泉日|埼玉|沪日|深日|JP|Japan|Tokyo|NRT|KIX
+    filter: 日本|川日|东京|大阪|泉日|埼玉|沪日|深日|JP|Japan|Tokyo|NRT|KIX
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
   - name: 🇺🇸美国
     type: url-test
     include-all: true
-    filter: (?i)美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|United States|ATL|BUF|DFW|EWR|IAD|LAX|MCI|MIA|ORD|PHX|PDX|SEA|SJC|US
+    filter: 美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|United States|ATL|BUF|DFW|EWR|IAD|LAX|MCI|MIA|ORD|PHX|PDX|SEA|SJC|US
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 150
   - name: 🇹🇼台湾
     type: url-test
     include-all: true
-    filter: (?i)台|新北|彰化|TW|Taiwan|TPE|KHH
+    filter: 台|新北|彰化|TW|Taiwan|TPE|KHH
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
   - name: 🇸🇬狮城
     type: url-test
     include-all: true
-    filter: (?i)新加坡|坡|🇸🇬|狮城|SG|Singapore|SIN
+    filter: 新加坡|坡|🇸🇬|狮城|SG|Singapore|SIN
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
   - name: 🇰🇷韩国
     type: url-test
     include-all: true
-    filter: (?i)KR|Korea|KOR|Seoul|首尔|春川|韩|韓|ICN
+    filter: KR|Korea|KOR|Seoul|首尔|春川|韩|韓|ICN
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
