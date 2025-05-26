@@ -7,15 +7,15 @@ proxy-groups:
     type: select
     proxies: [🚀节点选择, 🔯故障转移, ☑️手动切换, ♻️自动选择, 🔮负债均衡]
     include-all: true
-  - name: ☑️手动切换
-    proxies: [🔯故障转移, ♻️自动选择, 🔮负债均衡]
-    include-all: true
-    type: select
   - name: 🔯故障转移
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 180
     include-all: true
+  - name: ☑️手动切换
+    proxies: [🔯故障转移, ♻️自动选择, 🔮负债均衡]
+    include-all: true
+    type: select
   - name: ♻️自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
