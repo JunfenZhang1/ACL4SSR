@@ -1,26 +1,31 @@
 proxy-groups:
   - name: 🚀节点选择
     type: select
-    proxies: [🔯故障转移, ☑️手动切换, ♻️自动选择, ♻️自动选择all, 🇺🇳其它s, 🇺🇸美国, 🇸🇬狮城, 🇰🇷韩国, 🇯🇵日本, 🇹🇼台湾, 🇭🇰香港, 🇺🇳其它, DIRECT]
+    proxies: [🔯故障转移, ☑️手动切换, ♻️自动选择, ♻️自动选择all, 🇺🇸美国s, 🇺🇳其它s, 🇺🇸美国, 🇸🇬狮城, 🇰🇷韩国, 🇯🇵日本, 🇹🇼台湾, 🇭🇰香港, 🇺🇳其它, DIRECT]
   - name: 🍃ip净化
     type: select
     include-all: true
-    proxies: [🚀节点选择, 🔯故障转移, ☑️手动切换, ♻️自动选择, ♻️自动选择all, 🇺🇳其它s, 🇺🇸美国, 🇸🇬狮城, 🇰🇷韩国, 🇯🇵日本, 🇹🇼台湾, 🇭🇰香港, 🇺🇳其它]
+    proxies: [🚀节点选择, 🔯故障转移, ☑️手动切换, ♻️自动选择, ♻️自动选择all, 🇺🇸美国s, 🇺🇳其它s, 🇺🇸美国, 🇸🇬狮城, 🇰🇷韩国, 🇯🇵日本, 🇹🇼台湾, 🇭🇰香港, 🇺🇳其它]
     filter: "(?i)^(?!.*(?:狮城, 台湾, 日本, 美国, 韩国, 香港, 其它|🇨🇳|港|hk|hongkong|中|cn)).*"
-  - name: ☑️手动切换
-    proxies: [🔯故障转移, ♻️自动选择, ♻️自动选择all, 🇺🇳其它s, 🇺🇸美国, 🇸🇬狮城, 🇰🇷韩国, 🇯🇵日本, 🇹🇼台湾, 🇭🇰香港, 🇺🇳其它]
-    include-all: true
-    type: select
-  - name: 🇺🇳其它s
-    type: select
-    include-all: true
-    exclude-type: direct
-    filter: (?i)^(?!.*(?:🇭🇰|🇯🇵|🇺🇸|🇸🇬|🇨🇳|港|hk|hongkong|台|tw|taiwan|jp|japan|新|sg|singapore|美|us|unitedstates|KR|Korea|KOR|Seoul|首尔|春川|韩|韓|ICN|中|cn|\[0\]|hysteria2)).*
   - name: 🔯故障转移
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 180
     proxies: [🇺🇸美国, 🇸🇬狮城, 🇰🇷韩国, 🇯🇵日本, 🇹🇼台湾, 🇭🇰香港, 🇺🇳其它]
+  - name: ☑️手动切换
+    proxies: [🔯故障转移, ♻️自动选择, ♻️自动选择all, 🇺🇸美国s, 🇺🇳其它s, 🇺🇸美国, 🇸🇬狮城, 🇰🇷韩国, 🇯🇵日本, 🇹🇼台湾, 🇭🇰香港, 🇺🇳其它]
+    include-all: true
+    type: select
+  - name: 🇺🇸美国s
+    type: select
+    include-all: true
+    exclude-type: direct
+    filter: 美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States|ATL|BUF|DFW|EWR|IAD|LAX|MCI|MIA|ORD|PHX|PDX|SEA|SJC
+  - name: 🇺🇳其它s
+    type: select
+    include-all: true
+    exclude-type: direct
+    filter: ^(?!.*(?:🇭🇰|🇯🇵|🇺🇸|🇸🇬|🇨🇳|🇰🇷|🇹🇼|港|hk|HK|hongkong|台|tw|TW|taiwan|日本|JP|jp|japan|新|狮|sg|SG|singapore|美|us|US|unitedstates|韩|韓|kr|KR|Korea|KOR|Seoul|首尔|春川|ICN|中|cn|CN)).*$
   - name: ♻️自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -35,16 +40,16 @@ proxy-groups:
     include-all: true
   - name: 🤖Ai
     type: select
-    proxies: [🚀节点选择, 🔯故障转移, ☑️手动切换, ♻️自动选择, ♻️自动选择all, 🍃ip净化, 🇺🇳其它s, 🇺🇸美国, 🇸🇬狮城, 🇰🇷韩国, 🇯🇵日本, 🇹🇼台湾, 🇭🇰香港, 🇺🇳其它, DIRECT]
+    proxies: [🚀节点选择, 🔯故障转移, ☑️手动切换, ♻️自动选择, ♻️自动选择all, 🍃ip净化, 🇺🇸美国s, 🇺🇳其它s, 🇺🇸美国, 🇸🇬狮城, 🇰🇷韩国, 🇯🇵日本, 🇹🇼台湾, 🇭🇰香港, 🇺🇳其它, DIRECT]
   - name: 📺哔哩哔哩
     type: select
-    proxies: [DIRECT, 🇹🇼台湾, 🇭🇰香港, 🚀节点选择, 🔯故障转移, ☑️手动切换, ♻️自动选择, ♻️自动选择all, 🍃ip净化, 🇺🇳其它s, 🇺🇸美国, 🇸🇬狮城, 🇰🇷韩国, 🇯🇵日本, 🇹🇼台湾, 🇭🇰香港, 🇺🇳其它]
+    proxies: [DIRECT, 🇹🇼台湾, 🇭🇰香港, 🚀节点选择, 🔯故障转移, ☑️手动切换, ♻️自动选择, ♻️自动选择all, 🍃ip净化, 🇺🇸美国s, 🇺🇳其它s, 🇺🇸美国, 🇸🇬狮城, 🇰🇷韩国, 🇯🇵日本, 🇹🇼台湾, 🇭🇰香港, 🇺🇳其它]
   - name: 🐟漏网之鱼
     type: select
-    proxies: [🚀节点选择, 🔯故障转移, ☑️手动切换, ♻️自动选择, ♻️自动选择all, 🍃ip净化, 🇺🇳其它s, 🇺🇸美国, 🇸🇬狮城, 🇰🇷韩国, 🇯🇵日本, 🇹🇼台湾, 🇭🇰香港, 🇺🇳其它, DIRECT]
+    proxies: [🚀节点选择, 🔯故障转移, ☑️手动切换, ♻️自动选择, ♻️自动选择all, 🍃ip净化, 🇺🇸美国s, 🇺🇳其它s, 🇺🇸美国, 🇸🇬狮城, 🇰🇷韩国, 🇯🇵日本, 🇹🇼台湾, 🇭🇰香港, 🇺🇳其它, DIRECT]
   - name: 🎯全球直连
     type: select
-    proxies: [DIRECT, 🚀节点选择, 🔯故障转移, ☑️手动切换, ♻️自动选择, ♻️自动选择all, 🍃ip净化, 🇺🇳其它s, 🇺🇸美国, 🇸🇬狮城, 🇰🇷韩国, 🇯🇵日本, 🇹🇼台湾, 🇭🇰香港, 🇺🇳其它]
+    proxies: [DIRECT, 🚀节点选择, 🔯故障转移, ☑️手动切换, ♻️自动选择, ♻️自动选择all, 🍃ip净化, 🇺🇸美国s, 🇺🇳其它s, 🇺🇸美国, 🇸🇬狮城, 🇰🇷韩国, 🇯🇵日本, 🇹🇼台湾, 🇭🇰香港, 🇺🇳其它]
   - name: 🛑广告拦截
     type: select
     proxies: [REJECT, DIRECT]
@@ -97,7 +102,7 @@ proxy-groups:
     type: url-test
     include-all: true
     exclude-type: direct
-    filter: (?i)^(?!.*(?:🇭🇰|🇯🇵|🇺🇸|🇸🇬|🇨🇳|🇰🇷|🇹🇼|港|hk|hongkong|台|tw|taiwan|jp|japan|新|sg|singapore|美|us|unitedstates|KR|Korea|KOR|Seoul|首尔|春川|韩|韓|ICN|中|cn|\[0\]|hysteria2)).*
+    filter: ^(?!.*(?:🇭🇰|🇯🇵|🇺🇸|🇸🇬|🇨🇳|🇰🇷|🇹🇼|港|hk|HK|hongkong|台|tw|TW|taiwan|日本|JP|jp|japan|新|狮|sg|SG|singapore|美|us|US|unitedstates|韩|韓|kr|KR|Korea|KOR|Seoul|首尔|春川|ICN|中|cn|CN)).*$
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
