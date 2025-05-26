@@ -1,17 +1,17 @@
 proxy-groups:
   - name: 🚀节点选择
     type: select
-    proxies: [🔯故障转移, ☑️手动切换, ♻️自动选择, ♻️自动选择all, ➕其它s, 🇺🇸美国, 🇸🇬狮城, 🇰🇷韩国, 🇯🇵日本, 🇹🇼台湾, 🇭🇰香港, ➕其它, DIRECT]
+    proxies: [🔯故障转移, ☑️手动切换, ♻️自动选择, ♻️自动选择all, 🇺🇳其它s, 🇺🇸美国, 🇸🇬狮城, 🇰🇷韩国, 🇯🇵日本, 🇹🇼台湾, 🇭🇰香港, 🇺🇳其它, DIRECT]
   - name: 🍃ip净化
     type: select
     include-all: true
-    proxies: [🚀节点选择, 🔯故障转移, ☑️手动切换, ♻️自动选择, ♻️自动选择all, ➕其它s, 🇺🇸美国, 🇸🇬狮城, 🇰🇷韩国, 🇯🇵日本, 🇹🇼台湾, 🇭🇰香港, ➕其它]
+    proxies: [🚀节点选择, 🔯故障转移, ☑️手动切换, ♻️自动选择, ♻️自动选择all, 🇺🇳其它s, 🇺🇸美国, 🇸🇬狮城, 🇰🇷韩国, 🇯🇵日本, 🇹🇼台湾, 🇭🇰香港, 🇺🇳其它]
     filter: "(?i)^(?!.*(?:狮城, 台湾, 日本, 美国, 韩国, 香港, 其它|🇨🇳|港|hk|hongkong|中|cn)).*"
   - name: ☑️手动切换
-    proxies: [🔯故障转移, ♻️自动选择, ♻️自动选择all, ➕其它s, 🇺🇸美国, 🇸🇬狮城, 🇰🇷韩国, 🇯🇵日本, 🇹🇼台湾, 🇭🇰香港, ➕其它]
+    proxies: [🔯故障转移, ♻️自动选择, ♻️自动选择all, 🇺🇳其它s, 🇺🇸美国, 🇸🇬狮城, 🇰🇷韩国, 🇯🇵日本, 🇹🇼台湾, 🇭🇰香港, 🇺🇳其它]
     include-all: true
     type: select
-  - name: ➕其它s
+  - name: 🇺🇳其它s
     type: select
     include-all: true
     exclude-type: direct
@@ -20,13 +20,13 @@ proxy-groups:
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 180
-    proxies: [🇺🇸美国, 🇸🇬狮城, 🇰🇷韩国, 🇯🇵日本, 🇹🇼台湾, 🇭🇰香港, ➕其它]
+    proxies: [🇺🇸美国, 🇸🇬狮城, 🇰🇷韩国, 🇯🇵日本, 🇹🇼台湾, 🇭🇰香港, 🇺🇳其它]
   - name: ♻️自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 180
     tolerance: 50
-    proxies: [🇺🇸美国, 🇸🇬狮城, 🇰🇷韩国, 🇯🇵日本, 🇹🇼台湾, 🇭🇰香港, ➕其它]
+    proxies: [🇺🇸美国, 🇸🇬狮城, 🇰🇷韩国, 🇯🇵日本, 🇹🇼台湾, 🇭🇰香港, 🇺🇳其它]
   - name: ♻️自动选择all
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -35,16 +35,16 @@ proxy-groups:
     include-all: true
   - name: 🤖Ai
     type: select
-    proxies: [🚀节点选择, 🔯故障转移, ☑️手动切换, ♻️自动选择, ♻️自动选择all, 🍃ip净化, ➕其它s, 🇺🇸美国, 🇸🇬狮城, 🇰🇷韩国, 🇯🇵日本, 🇹🇼台湾, 🇭🇰香港, ➕其它, DIRECT]
+    proxies: [🚀节点选择, 🔯故障转移, ☑️手动切换, ♻️自动选择, ♻️自动选择all, 🍃ip净化, 🇺🇳其它s, 🇺🇸美国, 🇸🇬狮城, 🇰🇷韩国, 🇯🇵日本, 🇹🇼台湾, 🇭🇰香港, 🇺🇳其它, DIRECT]
   - name: 📺哔哩哔哩
     type: select
-    proxies: [DIRECT, 🇹🇼台湾, 🇭🇰香港, 🚀节点选择, 🔯故障转移, ☑️手动切换, ♻️自动选择, ♻️自动选择all, 🍃ip净化, ➕其它s, 🇺🇸美国, 🇸🇬狮城, 🇰🇷韩国, 🇯🇵日本, 🇹🇼台湾, 🇭🇰香港, ➕其它]
+    proxies: [DIRECT, 🇹🇼台湾, 🇭🇰香港, 🚀节点选择, 🔯故障转移, ☑️手动切换, ♻️自动选择, ♻️自动选择all, 🍃ip净化, 🇺🇳其它s, 🇺🇸美国, 🇸🇬狮城, 🇰🇷韩国, 🇯🇵日本, 🇹🇼台湾, 🇭🇰香港, 🇺🇳其它]
   - name: 🐟漏网之鱼
     type: select
-    proxies: [🚀节点选择, 🔯故障转移, ☑️手动切换, ♻️自动选择, ♻️自动选择all, 🍃ip净化, ➕其它s, 🇺🇸美国, 🇸🇬狮城, 🇰🇷韩国, 🇯🇵日本, 🇹🇼台湾, 🇭🇰香港, ➕其它, DIRECT]
+    proxies: [🚀节点选择, 🔯故障转移, ☑️手动切换, ♻️自动选择, ♻️自动选择all, 🍃ip净化, 🇺🇳其它s, 🇺🇸美国, 🇸🇬狮城, 🇰🇷韩国, 🇯🇵日本, 🇹🇼台湾, 🇭🇰香港, 🇺🇳其它, DIRECT]
   - name: 🎯全球直连
     type: select
-    proxies: [DIRECT, 🚀节点选择, 🔯故障转移, ☑️手动切换, ♻️自动选择, ♻️自动选择all, 🍃ip净化, ➕其它s, 🇺🇸美国, 🇸🇬狮城, 🇰🇷韩国, 🇯🇵日本, 🇹🇼台湾, 🇭🇰香港, ➕其它]
+    proxies: [DIRECT, 🚀节点选择, 🔯故障转移, ☑️手动切换, ♻️自动选择, ♻️自动选择all, 🍃ip净化, 🇺🇳其它s, 🇺🇸美国, 🇸🇬狮城, 🇰🇷韩国, 🇯🇵日本, 🇹🇼台湾, 🇭🇰香港, 🇺🇳其它]
   - name: 🛑广告拦截
     type: select
     proxies: [REJECT, DIRECT]
@@ -93,7 +93,7 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
-  - name: ➕其它
+  - name: 🇺🇳其它
     type: url-test
     include-all: true
     exclude-type: direct
