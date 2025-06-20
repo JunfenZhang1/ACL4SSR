@@ -1,5 +1,5 @@
 DOMAIN-SUFFIX,scholar.google.com
-#DOMAIN-SUFFIX,gemini.google.com
-#DOMAIN-SUFFIX,googleapis.com
-#DOMAIN-SUFFIX,signaler-pa.clients6.google.com
+DOMAIN-SUFFIX,gemini.google.com
+DOMAIN-SUFFIX,googleapis.com
+DOMAIN-SUFFIX,signaler-pa.clients6.google.com
 #DOMAIN-SUFFIX,youtube.com
