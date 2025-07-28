@@ -3,4 +3,6 @@ DOMAIN-SUFFIX,gemini.google.com
 DOMAIN-SUFFIX,googleapis.com
 DOMAIN-SUFFIX,signaler-pa.clients6.google.com
 DOMAIN-SUFFIX,www.google.com
+DOMAIN-SUFFIX,aistudio.google.com
+DOMAIN-SUFFIX,ai.google.dev
 #DOMAIN-SUFFIX,youtube.com
