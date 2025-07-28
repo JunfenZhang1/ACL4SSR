@@ -5,7 +5,7 @@ proxy-groups:
   - name: 🍃ip净化
     type: select
     include-all: true
-    proxies: [🚀节点选择, 🔯故障转移, ☑️手动切换, ♻️自动选择, ♻️自动选择all, 🇺🇸美国s, 🇪🇺欧盟s, 🇺🇳其它s, 🇺🇸美国, 🇸🇬狮城, 🇰🇷韩国, 🇯🇵日本, 🇹🇼台湾, 🇭🇰香港, 🇺🇳其它]
+    proxies: [🇺🇸美国s, 🇪🇺欧盟s, 🇺🇳其它s, 🚀节点选择, 🔯故障转移, ☑️手动切换, ♻️自动选择, ♻️自动选择all, 🇺🇸美国, 🇸🇬狮城, 🇰🇷韩国, 🇯🇵日本, 🇹🇼台湾, 🇭🇰香港, 🇺🇳其它]
     filter: "(?i)^(?!.*(?:香港|澳门|澳門|大陆|内地|中转|中繼|专线|專線|回国|HK|Hong Kong|Macao|Macau|CN|CHN|Back to CN)).*$"
   - name: 🔯故障转移
     type: fallback
