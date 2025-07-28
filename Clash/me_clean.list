@@ -6,5 +6,6 @@
 #DOMAIN-SUFFIX,aistudio.google.com
 #DOMAIN-SUFFIX,ai.google.dev
 DOMAIN-SUFFIX,google.com
+DOMAIN-SUFFIX,googleapis.com
 DOMAIN-SUFFIX,google.dev
 #DOMAIN-SUFFIX,youtube.com
