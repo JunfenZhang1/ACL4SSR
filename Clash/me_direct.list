@@ -1,6 +1,6 @@
 PROCESS-NAME,subs-check.exe
 DOMAIN-SUFFIX,dcg.microsoft.com
-#DOMAIN-SUFFIX,qwen.ai
+DOMAIN-SUFFIX,qwen.ai
 DOMAIN-SUFFIX,cyc-anime.net
 DOMAIN-SUFFIX,cycani.org
 DOMAIN-SUFFIX,cycimg.me
