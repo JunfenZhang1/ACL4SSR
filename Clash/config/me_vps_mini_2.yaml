@@ -1,41 +1,36 @@
 proxy-groups:
   - name: 🚀节点选择
     type: select
-    proxies: [🔯故障转移, 🔯google, ☑️other, ☑️手动切换, ♻️自动选择, 🔮负债均衡, DIRECT]
+    proxies: [🔯故障转移, 🔯google, ☑️手动切换, ♻️自动选择, 🔮负债均衡, DIRECT]
     include-all: true
-    filter: ^(?i)(?!.*(google|other)).*$
+    filter: ^(?i)(?!.*(google)).*$
   - name: 🍃ip净化
     type: select
-    proxies: [🔯故障转移, 🔯google, ☑️other, 🚀节点选择, ☑️手动切换, ♻️自动选择, 🔮负债均衡]
+    proxies: [🔯故障转移, 🔯google, 🚀节点选择, ☑️手动切换, ♻️自动选择, 🔮负债均衡]
   - name: 🔯故障转移
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 180
     include-all: true
-    filter: ^(?i)(?!.*(google|other)).*$
+    filter: ^(?i)(?!.*(google)).*$
   - name: 🔯google
     url: http://www.gstatic.com/generate_204
     interval: 180
     type: select
     include-all: true
     filter: (?i)google
-  - name: ☑️other
-    type: select
-    include-all: true
-    exclude-type: direct
-    filter: (?i)other
   - name: ☑️手动切换
-    proxies: [🔯故障转移, 🔯google, ☑️other, ♻️自动选择, 🔮负债均衡]
+    proxies: [🔯故障转移, 🔯google, ♻️自动选择, 🔮负债均衡]
     include-all: true
     type: select
-    filter: ^(?i)(?!.*(google|other)).*$
+    filter: ^(?i)(?!.*(google)).*$
   - name: ♻️自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 180
     tolerance: 50
     include-all: true
-    filter: ^(?i)(?!.*(google|other)).*$
+    filter: ^(?i)(?!.*(google)).*$
   - name: 🔮负债均衡
     type: load-balance
     strategy: consistent-hashing
@@ -43,19 +38,19 @@ proxy-groups:
     interval: 180
     tolerance: 50
     include-all: true
-    filter: ^(?i)(?!.*(google|other)).*$
+    filter: ^(?i)(?!.*(google)).*$
   - name: 🤖Ai
     type: select
-    proxies: [🚀节点选择, 🔯故障转移, 🔯google, ☑️other, ☑️手动切换, ♻️自动选择, 🔮负债均衡, 🍃ip净化, DIRECT]
+    proxies: [🚀节点选择, 🔯故障转移, 🔯google, ☑️手动切换, ♻️自动选择, 🔮负债均衡, 🍃ip净化, DIRECT]
   - name: 📺哔哩哔哩
     type: select
-    proxies: [DIRECT, 🚀节点选择, 🔯故障转移, 🔯google, ☑️other, ☑️手动切换, ♻️自动选择, 🔮负债均衡, 🍃ip净化]
+    proxies: [DIRECT, 🚀节点选择, 🔯故障转移, 🔯google, ☑️手动切换, ♻️自动选择, 🔮负债均衡, 🍃ip净化]
   - name: 🐟漏网之鱼
     type: select
-    proxies: [🚀节点选择, 🔯故障转移, 🔯google, ☑️other, ☑️手动切换, ♻️自动选择, 🔮负债均衡, 🍃ip净化, DIRECT]
+    proxies: [🚀节点选择, 🔯故障转移, 🔯google, ☑️手动切换, ♻️自动选择, 🔮负债均衡, 🍃ip净化, DIRECT]
   - name: 🎯全球直连
     type: select
-    proxies: [DIRECT, 🚀节点选择, 🔯故障转移, 🔯google, ☑️other, ☑️手动切换, ♻️自动选择, 🔮负债均衡, 🍃ip净化]
+    proxies: [DIRECT, 🚀节点选择, 🔯故障转移, 🔯google, ☑️手动切换, ♻️自动选择, 🔮负债均衡, 🍃ip净化]
   - name: 🛑广告拦截
     type: select
     proxies: [REJECT, DIRECT]
