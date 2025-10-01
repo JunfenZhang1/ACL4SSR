@@ -1,4 +1,5 @@
 PROCESS-NAME,subs-check.exe
+GEOSITE,cloudflare
 DOMAIN-SUFFIX,qwen.ai
 DOMAIN-SUFFIX,qwenlm.ai
 DOMAIN-SUFFIX,dcg.microsoft.com
