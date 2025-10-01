@@ -129,18 +129,18 @@ rule-providers:
     path: ./ruleset/me_direct.list
     interval: 86400
     format: text
-  me_clean:
-    type: http
-    behavior: classical
-    url: https://raw.githubusercontent.com/JunfenZhang1/ACL4SSR/refs/heads/me/Clash/me_clean.list
-    path: ./ruleset/me_clean.list
-    interval: 86400
-    format: text
   me_select:
     type: http
     behavior: classical
     url: https://raw.githubusercontent.com/JunfenZhang1/ACL4SSR/refs/heads/me/Clash/me_select.list
     path: ./ruleset/me_select.list
+    interval: 86400
+    format: text
+  me_clean:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/JunfenZhang1/ACL4SSR/refs/heads/me/Clash/me_clean.list
+    path: ./ruleset/me_clean.list
     interval: 86400
     format: text
   CFnat:
