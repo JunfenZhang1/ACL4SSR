@@ -1,0 +1,6 @@
+# 自定义直连规则：仅记录你明确指定直连的域名。
+# 当前暂无规则；以 # 开头的行是注释，不参与匹配。
+# 后续每行写一条 DOMAIN-SUFFIX,域名（覆盖域名及其子域名）。
+# 仅匹配一个完整域名时，使用 DOMAIN,域名。
+# rule-provider 使用 behavior: classical 和 format: text。
+# 在主配置 rules 前部引用：RULE-SET,personal-direct,DIRECT
