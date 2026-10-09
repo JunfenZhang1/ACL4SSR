@@ -16,3 +16,12 @@ DOMAIN,play.google.com
 DOMAIN-SUFFIX,ggpht.com
 DOMAIN-SUFFIX,gvt2.com
 DOMAIN-SUFFIX,gvt3.com
+# Google Play / Google Play services: prioritise the overseas proxy before CN and GoogleCN rules
+DOMAIN-SUFFIX,googleapis.cn
+DOMAIN,play-fe.googleapis.com
+DOMAIN,play.googleapis.com
+DOMAIN,android.googleapis.com
+DOMAIN-SUFFIX,gstatic.com
+DOMAIN-SUFFIX,googleusercontent.com
+DOMAIN-SUFFIX,android.com
+DOMAIN-SUFFIX,google-analytics.com
