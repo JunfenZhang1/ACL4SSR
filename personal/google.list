@@ -1,0 +1,43 @@
+# Google 生态专用规则（Mihomo classical/text）
+# 出口：🌐 谷歌服务 -> 默认 🚀 节点选择2
+# 仅在此维护 Google / Gemini / Play / YouTube 的个人补充规则。
+# 不要把 Google 域名加入 personal/proxy.list（普通国外代理）。
+
+# 一、Google 核心服务、登录和公共资源
+DOMAIN-SUFFIX,google.com
+DOMAIN-SUFFIX,googleapis.com
+DOMAIN-SUFFIX,googleapis.cn
+DOMAIN-SUFFIX,googleusercontent.com
+DOMAIN-SUFFIX,gstatic.com
+DOMAIN-SUFFIX,ggpht.com
+DOMAIN-SUFFIX,google-analytics.com
+DOMAIN-SUFFIX,g.co
+DOMAIN-SUFFIX,goo.gl
+
+# 二、Gemini、AI Studio、NotebookLM：与 Google 账号共用出口
+DOMAIN,gemini.google.com
+DOMAIN,aistudio.google.com
+DOMAIN,bard.google.com
+DOMAIN,generativelanguage.googleapis.com
+DOMAIN,notebooklm.google.com
+DOMAIN-SUFFIX,notebooklm.google
+DOMAIN-SUFFIX,ai.google.dev
+
+# 三、Google Play、Android 与软件下载 CDN
+DOMAIN,play.google.com
+DOMAIN,android.apis.google.com
+DOMAIN,play-fe.googleapis.com
+DOMAIN,play.googleapis.com
+DOMAIN,android.googleapis.com
+DOMAIN,dl.google.com
+DOMAIN,dl-ssl.google.com
+DOMAIN-SUFFIX,android.com
+DOMAIN-SUFFIX,gvt1.com
+DOMAIN-SUFFIX,gvt2.com
+DOMAIN-SUFFIX,gvt3.com
+
+# 四、YouTube
+DOMAIN-SUFFIX,youtube.com
+DOMAIN-SUFFIX,youtu.be
+DOMAIN-SUFFIX,googlevideo.com
+DOMAIN-SUFFIX,ytimg.com
