@@ -1,27 +1,6 @@
-# 自定义国外代理规则：仅记录你明确指定走国外代理的域名。
-# 后续每行写一条 DOMAIN-SUFFIX,域名（覆盖域名及其子域名）。
-# 仅匹配一个完整域名时，使用 DOMAIN,域名。
-# rule-provider 使用 behavior: classical 和 format: text。
-# 在主配置 rules 前部引用：RULE-SET,personal-proxy,你的国外代理组名称
-# 代理组须在主配置中已存在，并选择国外节点。
+# 自定义国外代理规则：只收录非 Google 的个人补充域名。
+# 目标策略组：🌍 国外服务
+# Google / Gemini / Play / YouTube 请放入 personal/google.list，避免跨策略组分流。
+# 自定义国内直连域名请放入 personal/direct.list。
+# 每行一个经典规则，如 DOMAIN-SUFFIX,example.com 或 DOMAIN,api.example.com。
 DOMAIN-SUFFIX,hanime1.me
-
-# Google Play 商店：应用下载、更新与连接诊断（走国外服务）
-# 仅列出 Play 相关域名；避免 googleapis.com 整体代理抢先匹配其他 AI 服务。
-DOMAIN-SUFFIX,gvt1.com
-DOMAIN,dl.google.com
-DOMAIN,dl-ssl.google.com
-DOMAIN,android.apis.google.com
-DOMAIN,play.google.com
-DOMAIN-SUFFIX,ggpht.com
-DOMAIN-SUFFIX,gvt2.com
-DOMAIN-SUFFIX,gvt3.com
-# Google Play / Google Play services: prioritise the overseas proxy before CN and GoogleCN rules
-DOMAIN-SUFFIX,googleapis.cn
-DOMAIN,play-fe.googleapis.com
-DOMAIN,play.googleapis.com
-DOMAIN,android.googleapis.com
-DOMAIN-SUFFIX,gstatic.com
-DOMAIN-SUFFIX,googleusercontent.com
-DOMAIN-SUFFIX,android.com
-DOMAIN-SUFFIX,google-analytics.com
