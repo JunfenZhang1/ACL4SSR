@@ -5,3 +5,14 @@
 # 在主配置 rules 前部引用：RULE-SET,personal-proxy,你的国外代理组名称
 # 代理组须在主配置中已存在，并选择国外节点。
 DOMAIN-SUFFIX,hanime1.me
+
+# Google Play 商店：应用下载、更新与连接诊断（走国外服务）
+# 仅列出 Play 相关域名；避免 googleapis.com 整体代理抢先匹配其他 AI 服务。
+DOMAIN-SUFFIX,gvt1.com
+DOMAIN,dl.google.com
+DOMAIN,dl-ssl.google.com
+DOMAIN,android.apis.google.com
+DOMAIN,play.google.com
+DOMAIN-SUFFIX,ggpht.com
+DOMAIN-SUFFIX,gvt2.com
+DOMAIN-SUFFIX,gvt3.com
